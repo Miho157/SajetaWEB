@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #32a852;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.company-name h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.language-select select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+nav {
+  background-color: #fff	;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 
+			  0 1px 2px rgba(0, 0, 0, 0.24);
+position: sticky;
+top: 0;
+z-index: 1;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+}
+
+nav li {
+margin-right: 20px;
+}
+
+nav a {
+display: block;
+padding: 10px;
+text-decoration: none;
+color: #333;
+transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+background-color: #f4f4f4;
+}
+
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px 20px;
+}
+
+.hero {
+background-image: url('images/hero.jpg');
+background-size: cover;
+background-position: center;
+color: #fff;
+text-align: center;
+padding: 100px 0;
+}
+
+.hero h2 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.hero p {
+font-size: 20px;
+margin-bottom: 40px;
+}
+
+.button {
+display: inline-block;
+background-color: #fff;
+color: #333;
+padding: 10px 20px;
+border-radius: 5px;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+.button:hover {
+background-color: #f4f4f4;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  max-width: 90%;
+}
+
+.service img {
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.service:nth-child(even) img {
+  order: 2;
+  margin-right: 0;
+  margin-left: 20px;
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service h2 {
+  margin-bottom: 10px;
+}
+
+
+.about-us {
+background-color: #f4f4f4;
+padding: 80px;
+}
+
+.about-us h2 {
+font-size: 36px;
+margin-bottom: 40px;
+}
+
+.about-us p {
+font-size: 20px;
+margin-bottom: 40px;
+}
+
+footer {
+background-color: #32a852;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+
+footer p {
+margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+header {
+flex-direction: column;
+align-items: flex-start;
+}
+
+.company-name h1 {
+margin-top: 20px;
+}
+
+nav ul {
+flex-direction: column;
+align-items: center;
+}
+
+nav li {
+margin-right: 0;
+margin-bottom: 10px;
+}
+}
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.service img {
+  max-width: 50%;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.service:nth-child(odd) img {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.service:nth-child(odd) .service-text {
+  order: 2;
+}
+
+.service:nth-child(even) img {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.service:nth-child(even) .service-text {
+  order: 1;
+}
+
+.service-text {
+  flex: 1;
+  text-align: justify;
+}
+
+
+.video {
+  margin: 2rem 0;
+}
+
+video, iframe {
+  width: 100%;
+}
+
+.video p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 0.5rem;
+  background-color: #007f6e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #006656;
+}
+
+/* Social media icons */
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+.content {
+  max-width: 800px; /* set the maximum width of the content */
+  margin: 0 auto; /* center the content horizontally */
+  padding: 50px; /* add some padding to the content */
+  text-align: justify; /* justify the text to improve readability */
+  font-size: 18px; /* set the font size of the text */
+  line-height: 1.5; /* set the line-height to improve readability */
+}
+.social-media-icons {
+  display: flex; /* use flexbox to align the icons horizontally */
+  justify-content: center; /* center the icons horizontally */
+  align-items: center; /* center the icons vertically */
+}
+
+.social-media-icons a {
+  display: inline-block; /* display the icons as block elements */
+  margin: 0 10px; /* add some margin between the icons */
+}
+
+.social-media-icons a img {
+  width: 40px; /* set the width of the icons */
+  height: 40px; /* set the height of the icons */
+  object-fit: cover; /* preserve the aspect ratio of the icons */
+  border-radius: 50%; /* make the icons circular */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* add a shadow effect to the icons */
+  transition: all 0.2s ease-in-out; /* add a smooth transition effect on hover */
+}
+
+.social-media-icons a:hover img {
+  transform: scale(1.5); /* enlarge the icons on hover */
+}
+
+
